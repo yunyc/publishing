@@ -1,0 +1,299 @@
+body * {
+    text-decoration: none;
+    color: #000;
+}
+
+body, ul, li, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+body .container {
+    width: 85%;
+    margin: auto;
+}
+
+#wrapper {
+    width: 1280px;
+}
+
+#header {
+    width: 100%;
+
+}
+
+#header .top_header {
+    width: 100%;
+    height: 35px;
+    background: #000;
+    border-bottom: 1px solid #fff;
+
+}
+
+#header .top_header .menu {
+    float: right;
+}
+#header .top_header .menu li {
+    float: left;
+    padding: 7px;
+}
+#header .top_header .menu a {
+    font-size: 12px;
+    color: #fff;
+}
+
+#header .bottom_header {
+    width: 100%;
+    height: 80px;
+    background: #0c004d;
+    border-bottom: 1px solid #fff;
+
+}
+
+#header .nav_bar {
+}
+
+#header .nav_bar .logo_image {
+    background-image: url("/images/djlib_logo.png");
+    width: 188px;
+    height: 59px;
+    position: relative;
+    top: 10px;
+}
+
+#header .nav_bar .nav_menu {
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    top: -45px;
+    right: 0px;
+}
+
+#header .nav_bar .nav_menu li {
+    float: left;
+    padding: 15px;
+}
+
+#header .nav_bar .nav_menu li:hover {
+    border-bottom: 1px solid #ddd;
+}
+
+#header .nav_bar .nav_menu a {
+    font-size: 18px;
+    color: #fff;
+}
+#header .nav_bar .nav_menu .dropdown {
+    display: none;
+}
+#header .nav_bar .nav_menu .dropdown li {
+}
+#header .nav_bar .nav_menu .dropdown a {
+}
+
+#contents {
+}
+
+#contents .title p {
+    width: 95%;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 7px;
+    padding: 5px;
+    border-bottom: 3px solid #0c004d;
+}
+
+#contents .content {
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 195px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contents .content > ul {
+    list-style: circle;
+}
+
+#contents .images {
+    width: 100%;
+    height: 380px;
+    position: relative;
+}
+
+#contents .images .left_image {
+    width: 380px;
+    height: 380px;
+    background-image: url("/images/books-2568151_1920.jpg");
+    background-size: cover;
+    position: absolute;
+}
+
+#contents .images .right_image {
+    width: 900px;
+    height: 380px;
+    background-image: url("/images/library-488690_1920.jpg");
+    background-size: cover;
+    position: absolute;
+    left:380px;
+}
+
+#contents .images img {
+    float: left;
+}
+
+#contents .image_btn {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #000;
+}
+
+#contents .left_contents {
+    width: 32%;
+    height: 530px;
+    margin-top: 30px;
+    float: left;
+    margin-right: 1%;
+}
+#contents .popup {
+    width: 100%;
+    height: 250px;
+}
+#contents .popup .title {
+}
+#contents .popup p {
+}
+#contents .popup .content {
+}
+#contents .image_banner {
+}
+#contents .gallery {
+    width: 100%;
+    height: 250px;
+    margin-top: 30px;
+}
+#contents .gallery .title {
+}
+#contents .gallery p {
+}
+#contents .gallery .content {
+}
+#contents .image {
+    background: #aaa;
+    width: 30%;
+    height: 60px;
+    margin: 1.6%;
+}
+
+#contents .image .img {
+    width: 30px;
+    height: 60px;
+}
+#contents .image_info {
+
+}
+#contents .main_contents {
+    width: 32%;
+    height: 530px;
+    margin-top: 30px;
+    float: left;
+    margin-right: 1%;
+}
+#contents .tab_menu {
+    width: 100%;
+    height: 250px;
+}
+#contents .tab_menu .title {
+}
+#contents .tab_menu .content {
+}
+
+#contents .tabs {
+    width: 95%;
+    height: 30px;
+    border-bottom: 3px solid #000456;
+    border-right: none;
+    margin: 8px;
+    padding: 3px;
+
+}
+
+#contents .tabs li {
+    float: left;
+    padding: 0 15px;
+}
+
+
+#contents .tabs > li > a {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#contents .popular_book {
+    width: 100%;
+    height: 250px;
+    margin-top: 30px;
+}
+#contents .popular_book .title {
+}
+#contents .popular_book p {
+}
+#contents .popular_book .content {
+}
+#contents .book_image {
+}
+#contents .right_contents {
+    width: 32%;
+    height: 530px;
+    margin-top: 30px;
+    float: left;
+}
+#contents .important {
+    width: 100%;
+    height: 250px;
+}
+#contents .important .title {
+}
+#contents .important p {
+}
+#contents .important .content {
+}
+#contents .search {
+    width: 100%;
+    height: 250px;
+    margin-top: 30px;
+}
+
+#contents .search .search_bar {
+    width: 100%;
+    height: 70px;
+    border: 1px solid #000;
+    padding: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+#contents .search .search_bar input {
+    width: 280px;
+    height: 27px;
+    border: 3px solid #000456
+}
+
+#contents .search .search_bar i {
+    font-size: 30px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+#contents .search .search_bar select {
+    width: 160px;
+    margin-top: 10px;
+}
+
+#contents .search .btn_group {
+    width: 100%;
+    height: 90px;
+    padding: 8px;
+}
+
