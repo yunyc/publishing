@@ -7,7 +7,9 @@ body, ul, li, p {
     margin: 0;
     padding: 0;
     list-style: none;
+}
 
+body a {
 }
 
 body .container {
@@ -49,7 +51,6 @@ body .container {
     height: 80px;
     background: #0c004d;
     border-bottom: 1px solid #fff;
-
 }
 
 #header .nav_bar {
@@ -65,15 +66,18 @@ body .container {
 
 #header .nav_bar .nav_menu {
     width: fit-content;
-    margin: auto;
     position: relative;
     top: -45px;
-    right: 0px;
+    left: 230px;
 }
 
-#header .nav_bar .nav_menu li {
+#header .nav_bar .nav_menu > li {
     float: left;
-    padding: 15px;
+    width: 162px;
+    height: 24px;
+    text-align: center;
+    padding: 15px 0;
+
 }
 
 #header .nav_bar .nav_menu li:hover {
@@ -85,8 +89,26 @@ body .container {
     color: #fff;
 }
 #header .nav_bar .nav_menu .dropdown {
-    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 67px;
+    left: 7px;
+    background: #fff;
+    float: none;
+    border: 1px solid #aaa;
 }
+
+#header .nav_bar .nav_menu .dropdown li{
+    margin: 20px;
+
+}
+
+
+#header .nav_bar .nav_menu .dropdown a{
+    color: #000;
+    font-size: 15px;
+}
+
 #header .nav_bar .nav_menu .dropdown li {
 }
 #header .nav_bar .nav_menu .dropdown a {
@@ -112,8 +134,26 @@ body .container {
     flex-wrap: wrap;
 }
 
+
+
+
+#contents .content li{
+    width: 95%;
+    margin: auto;
+    height: 27px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+#contents .content span {
+    float: right;
+    color: #aaa;
+}
+
+
 #contents .content > ul {
     list-style: circle;
+    width: 100%;
 }
 
 #contents .images {
@@ -130,12 +170,32 @@ body .container {
     position: absolute;
 }
 
+#contents .images .left_image .opacity {
+    width: 250px;
+    height: inherit;
+    position: absolute;
+    background: #000;
+    opacity: 0.7;
+}
+
+#contents .images .right_image .notification {
+    width: 350px;
+    height: 130px;
+    background: #efe4e4;
+    position: absolute;
+    bottom: 0px;
+    z-index: 999;
+
+}
+
+
+
 #contents .images .right_image {
     width: 900px;
     height: 380px;
     background-image: url("/images/library-488690_1920.jpg");
     background-size: cover;
-    position: absolute;
+    position: relative;
     left:380px;
 }
 
@@ -145,9 +205,32 @@ body .container {
 
 #contents .image_btn {
     width: 100%;
-    height: 100px;
-    border: 1px solid #000;
+    height: 130px;
+    display: flex;
+    flex-wrap: wrap
 }
+
+#contents .image_btn .btns {
+    width: 12.3%;
+    height: 100%;
+    background: #000;
+    float: left;
+    border-top: 1px solid #000;
+    border-bottom: 2px solid #000;
+    padding: 15px 0;
+}
+
+#contents .image_btn .btns .btns_img {
+    width: 74px;
+    height: 68px;
+    margin: 10px auto;
+}
+
+#contents .image_btn .btns p {
+   width: fit-content;
+    margin: auto;
+}
+
 
 #contents .left_contents {
     width: 32%;
@@ -180,15 +263,25 @@ body .container {
 #contents .gallery .content {
 }
 #contents .image {
-    background: #aaa;
-    width: 30%;
     height: 60px;
-    margin: 1.6%;
+
 }
 
 #contents .image .img {
     width: 30px;
     height: 60px;
+}
+
+#contents .gallery a {
+    width: 30%;
+    height: 30px;
+    margin: 1.6%;
+}
+
+#contents .image p {
+    font-size: 12px;
+    display: block;
+    overflow: hidden;
 }
 #contents .image_info {
 
@@ -216,13 +309,15 @@ body .container {
     border-right: none;
     margin: 8px;
     padding: 3px;
-
 }
 
 #contents .tabs li {
     float: left;
     padding: 0 15px;
 }
+
+
+
 
 
 #contents .tabs > li > a {
@@ -242,9 +337,20 @@ body .container {
 #contents .popular_book .content {
 }
 #contents .book_image {
+    width: 29.3%;
+    height: 178px;
+    margin: 2%;
 }
+
+#contents .book_image .book_img {
+    width: 100%;
+    height: 135px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    margin-bottom: 9px;
+}
+
 #contents .right_contents {
-    width: 32%;
+    width: 350px;
     height: 530px;
     margin-top: 30px;
     float: left;
@@ -267,16 +373,16 @@ body .container {
 
 #contents .search .search_bar {
     width: 100%;
-    height: 70px;
-    border: 1px solid #000;
+    height: 80px;
+    border: 1px solid #ddd;
     padding: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 #contents .search .search_bar input {
-    width: 280px;
-    height: 27px;
-    border: 3px solid #000456
+    width: 260px;
+    height: 10px;
+    border: 3px solid #000456;
+    padding: 10px;
 }
 
 #contents .search .search_bar i {
@@ -289,11 +395,36 @@ body .container {
 #contents .search .search_bar select {
     width: 160px;
     margin-top: 10px;
+    padding: 2px;
 }
+
+
 
 #contents .search .btn_group {
     width: 100%;
     height: 90px;
     padding: 8px;
+    display: flex;
 }
+
+#contents .search .btn_group .btn {
+    width: 23%;
+    height: 70px;
+    margin: 1%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+#contents .search .btn_group .btn .link-img {
+    width:42px;
+    height: 46px;
+    margin: auto;
+}
+
+
+
+
+
 
