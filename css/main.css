@@ -3,14 +3,16 @@ body * {
     color: #000;
 }
 
-body, ul, li, p {
+body,
+ul,
+li,
+p {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-body a {
-}
+body a {}
 
 body .container {
     width: 85%;
@@ -37,10 +39,12 @@ body .container {
 #header .top_header .menu {
     float: right;
 }
+
 #header .top_header .menu li {
     float: left;
     padding: 7px;
 }
+
 #header .top_header .menu a {
     font-size: 12px;
     color: #fff;
@@ -53,8 +57,7 @@ body .container {
     border-bottom: 1px solid #fff;
 }
 
-#header .nav_bar {
-}
+#header .nav_bar {}
 
 #header .nav_bar .logo_image {
     background-image: url("/images/djlib_logo.png");
@@ -76,7 +79,7 @@ body .container {
     width: 162px;
     height: 24px;
     text-align: center;
-    padding: 15px 0;
+    padding: 21px 0;
 
 }
 
@@ -88,6 +91,7 @@ body .container {
     font-size: 18px;
     color: #fff;
 }
+
 #header .nav_bar .nav_menu .dropdown {
     position: absolute;
     z-index: 9999;
@@ -98,23 +102,31 @@ body .container {
     border: 1px solid #aaa;
 }
 
-#header .nav_bar .nav_menu .dropdown li{
+#header .nav_bar .nav_menu .dropdown > ul {
+    float: left;
+    padding: 0 7px;
+    border-right: 1px solid #aaa;
+    box-sizing: border-box;
+}
+
+
+#header .nav_bar .nav_menu .dropdown li {
     margin: 20px;
 
 }
 
 
-#header .nav_bar .nav_menu .dropdown a{
+#header .nav_bar .nav_menu .dropdown a {
     color: #000;
     font-size: 15px;
 }
 
-#header .nav_bar .nav_menu .dropdown li {
-}
-#header .nav_bar .nav_menu .dropdown a {
-}
+#header .nav_bar .nav_menu .dropdown li {}
+
+#header .nav_bar .nav_menu .dropdown a {}
 
 #contents {
+    height: 1100px;
 }
 
 #contents .title p {
@@ -132,12 +144,13 @@ body .container {
     height: 195px;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 
 
 
-#contents .content li{
+#contents .content li {
     width: 95%;
     margin: auto;
     height: 27px;
@@ -196,7 +209,7 @@ body .container {
     background-image: url("/images/library-488690_1920.jpg");
     background-size: cover;
     position: relative;
-    left:380px;
+    left: 380px;
 }
 
 #contents .images img {
@@ -227,7 +240,7 @@ body .container {
 }
 
 #contents .image_btn .btns p {
-   width: fit-content;
+    width: fit-content;
     margin: auto;
 }
 
@@ -239,29 +252,80 @@ body .container {
     float: left;
     margin-right: 1%;
 }
+
 #contents .popup {
     width: 100%;
     height: 250px;
 }
-#contents .popup .title {
+
+#contents .popup .title {}
+
+#contents .popup p {}
+
+#contents .popup .content {}
+
+#contents .popup .images {
+    width: 900px;
+    height: 100%;
+    display: flex;
 }
-#contents .popup p {
+
+#contents .popup .images .list {
+    position: relative;
 }
-#contents .popup .content {
+
+
+
+
+
+#contents .popup .images div {
+    float: left;
+    width: 100%;
+    height: 100%;
 }
-#contents .image_banner {
+
+#contents .popup .images img {
+    float: left;
+    width: 348px;
+    height: 100%;
 }
+
+#contents .popup .images .btn_group {
+    width: 60px;
+    height: 20px;
+    position: absolute;
+    z-index: 9999;
+    left: 288px;
+    top: 165px;
+}
+
+#contents .popup .images .btn_group button {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: #000;
+    opacity: 0.8;
+    border: none;
+    border-right: 1px solid #aaa;
+}
+
+#contents .popup .images .btn_group button i {
+    color: #fff;
+}
+
+
 #contents .gallery {
     width: 100%;
     height: 250px;
     margin-top: 30px;
 }
-#contents .gallery .title {
-}
-#contents .gallery p {
-}
-#contents .gallery .content {
-}
+
+#contents .gallery .title {}
+
+#contents .gallery p {}
+
+#contents .gallery .content {}
+
 #contents .image {
     height: 60px;
 
@@ -283,9 +347,9 @@ body .container {
     display: block;
     overflow: hidden;
 }
-#contents .image_info {
 
-}
+#contents .image_info {}
+
 #contents .main_contents {
     width: 32%;
     height: 530px;
@@ -293,14 +357,15 @@ body .container {
     float: left;
     margin-right: 1%;
 }
+
 #contents .tab_menu {
     width: 100%;
     height: 250px;
 }
-#contents .tab_menu .title {
-}
-#contents .tab_menu .content {
-}
+
+#contents .tab_menu .title {}
+
+#contents .tab_menu .content {}
 
 #contents .tabs {
     width: 95%;
@@ -310,6 +375,20 @@ body .container {
     margin: 8px;
     padding: 3px;
 }
+
+#contents .tab_menu .content {
+    position: relative;
+
+}
+
+#contents .tab_menu .content ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
 
 #contents .tabs li {
     float: left;
@@ -330,12 +409,13 @@ body .container {
     height: 250px;
     margin-top: 30px;
 }
-#contents .popular_book .title {
-}
-#contents .popular_book p {
-}
-#contents .popular_book .content {
-}
+
+#contents .popular_book .title {}
+
+#contents .popular_book p {}
+
+#contents .popular_book .content {}
+
 #contents .book_image {
     width: 29.3%;
     height: 178px;
@@ -345,7 +425,7 @@ body .container {
 #contents .book_image .book_img {
     width: 100%;
     height: 135px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     margin-bottom: 9px;
 }
 
@@ -355,16 +435,18 @@ body .container {
     margin-top: 30px;
     float: left;
 }
+
 #contents .important {
     width: 100%;
     height: 250px;
 }
-#contents .important .title {
-}
-#contents .important p {
-}
-#contents .important .content {
-}
+
+#contents .important .title {}
+
+#contents .important p {}
+
+#contents .important .content {}
+
 #contents .search {
     width: 100%;
     height: 250px;
@@ -411,14 +493,14 @@ body .container {
     width: 23%;
     height: 70px;
     margin: 1%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     text-align: center;
 }
 
 
 #contents .search .btn_group .btn .link-img {
-    width:42px;
+    width: 42px;
     height: 46px;
     margin: auto;
 }
@@ -428,3 +510,10 @@ body .container {
 
 
 
+
+#footer {
+    width: 100%;
+    height: 130px;
+    background: #0c004d;
+    position: relative;
+}
