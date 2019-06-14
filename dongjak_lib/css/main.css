@@ -1,14 +1,15 @@
 @charset UTF-8;
 
+@font-face {
+
+}
+
 body * {
     text-decoration: none;
     color: #000;
 }
 
-body,
-ul,
-li,
-p {
+body, ul, li, p {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -19,7 +20,7 @@ body .container {
     margin: auto;
 }
 
-#wrapper {
+body #wrapper {
     width: 1280px;
 }
 
@@ -58,7 +59,7 @@ body .container {
 
 
 #header .nav_bar .logo_image {
-    background-image: url("/images/djlib_logo.png");
+    background-image: url("/dongjak_lib/images/djlib_logo.png");
     width: 188px;
     height: 59px;
     position: relative;
@@ -134,6 +135,11 @@ body .container {
     border-bottom: 3px solid #0c004d;
 }
 
+#contents a:hover {
+    color:darkblue;
+    font-weight: 700;
+}
+
 #contents .content {
     border: 1px solid #ddd;
     width: 100%;
@@ -185,7 +191,7 @@ body .container {
 #contents .images .left_image {
     width: 380px;
     height: 380px;
-    background-image: url("/images/books-2568151_1920.jpg");
+    background-image: url("/dongjak_lib/images/books-2568151_1920.jpg");
     background-size: cover;
     position: absolute;
 }
@@ -235,7 +241,7 @@ body .container {
 #contents .images .right_image {
     width: 900px;
     height: 380px;
-    background-image: url("/images/library-488690_1920.jpg");
+    background-image: url("/dongjak_lib/images/library-488690_1920.jpg");
     background-size: cover;
     position: relative;
     left: 380px;
